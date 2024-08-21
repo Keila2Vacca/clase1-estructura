@@ -12,8 +12,8 @@ public class VentanaPrincial extends javax.swing.JFrame {
     int sizeAdultosMayores = 0;
     
     int arrayMenores[];
-    int arrayMayores[] = new int[5];
-    int arrayAdultosMayores[] = new int[5];
+    int arrayMayores[];
+    int arrayAdultosMayores[];
     int im = 0;
     int ima = 0;
     int iam = 0;
@@ -101,7 +101,7 @@ public class VentanaPrincial extends javax.swing.JFrame {
        
         if (age < 18) {
             JOptionPane.showMessageDialog(rootPane, "Usted es menor de edad");
-            if (sizeMenores == 5) {
+            if (im == sizeMenores) {
                 JOptionPane.showMessageDialog(rootPane, "no hay espacio para almacenar");
             } else {
                 arrayMenores[im] = age;
@@ -109,7 +109,7 @@ public class VentanaPrincial extends javax.swing.JFrame {
             }
         } else if (age >= 18 && age < 65) {
             JOptionPane.showMessageDialog(rootPane, "Usted es mayor de edad");
-            if (ima == 5) {
+            if (ima == sizeMayores) {
                 JOptionPane.showMessageDialog(rootPane, "no hay espacio para almacenar");
             } else {
                 arrayMayores[ima] = age;
@@ -117,7 +117,7 @@ public class VentanaPrincial extends javax.swing.JFrame {
             }
         } else if (age >= 65) {
             JOptionPane.showMessageDialog(rootPane, "Usted es adulto mayor");
-            if (iam == 5) {
+            if (iam == sizeAdultosMayores) {
                 JOptionPane.showMessageDialog(rootPane, "no hay espacio para almacenar");
             } else {
                 arrayAdultosMayores[iam] = age;
@@ -140,6 +140,7 @@ public class VentanaPrincial extends javax.swing.JFrame {
          arrayAdultosMayores = new int[sizeAdultosMayores];
          
          create.setEnabled(true);
+         
          
     }//GEN-LAST:event_sizeActionPerformed
 
