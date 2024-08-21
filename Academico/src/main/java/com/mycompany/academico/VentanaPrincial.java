@@ -133,8 +133,8 @@ public class VentanaPrincial extends javax.swing.JFrame {
 
     private void sizeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sizeActionPerformed
          sizeMenores = validateValue(JOptionPane.showInputDialog(rootPane, "Ingrese el tamaño del arreglo de menores en números enteros y sin espacios"));
-         sizeMenores = validateValue(JOptionPane.showInputDialog(rootPane, "Ingrese el tamaño del arreglo de mayores en números enteros y sin espacios"));
-         sizeMenores = validateValue(JOptionPane.showInputDialog(rootPane, "Ingrese el tamaño del arreglo de adultos mayores en números enteros y sin espacios"));
+         sizeMayores = validateValue(JOptionPane.showInputDialog(rootPane, "Ingrese el tamaño del arreglo de mayores en números enteros y sin espacios"));
+         sizeAdultosMayores = validateValue(JOptionPane.showInputDialog(rootPane, "Ingrese el tamaño del arreglo de adultos mayores en números enteros y sin espacios"));
          arrayMenores = new int[sizeMenores];
          arrayMayores = new int[sizeMayores];
          arrayAdultosMayores = new int[sizeAdultosMayores];
